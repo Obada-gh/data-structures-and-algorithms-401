@@ -10,7 +10,7 @@ Once you’ve achieved a working solution, implement the same feature with a dif
 In other words, use a different algorithm & pseudocode to solve the same problem. Then compare approaches for efficiency, readability, flexibility, etc.
 
 ## Whiteboard Process
-![array-reverse](https://www10.0zz0.com/2021/06/06/22/783597368.png)
+![array-reverse](./array-reverse.png)
 
 ## Approach & Efficiency
 I finish with two solutions the time for the solutions depends on the array length but the secound solution with for loop was faster i think because the for loop it not have a condition. 
