@@ -13,10 +13,11 @@ class LinkedList:
 		node = Node(data,self.head)
 		self.head = node
 
-	def toString(self):
+	def __str__(self):
 		if self.head is None:
-			print('linked list is empty')
-			return
+			
+			return('linked list is empty')
+			
 		
 		itr = self.head
 		
@@ -85,8 +86,15 @@ class LinkedList:
 				break
 			count=count.next
 
+	def kthFromEnd(self,k):
+		newArr=[]
+		itr = self.head
+		while itr:
+			newArr.append(itr.data)
+			itr = itr.next
 
-        
+		newArr.reverse()
+		return(newArr[k])
 
 
     
@@ -99,8 +107,74 @@ if __name__ == '__main__':
 	ll.insertAfter(1,2)
 	ll.append(5)
 	ll.insertBefore(1,7)
+	ll.__str__()
+	ll.kthFromEnd(0)
+	ll.kthFromEnd(2)
+
+
+
+
+
+
+
+
+	# def insert_val(self,data):
+	# 	if self.head == None:
+	# 		node = Node(5,self.head)
+	# 	else:
+	# 	    for i in data:
+	# 		    self.append(i)
+	# 		#node.next.push to arr
+	# 		#while.next
+	# 		#arrayshift
+	# 		#3
+
+
+	# def length(self):
+	# 	itr = self.head
+	# 	count=1
+		
+
+	# 	while itr.next:
+			
+	# 		itr = itr.next
+	# 		count+=1
+
+	# 	return count
+
 	
-	ll.toString()
+#itr.next is node (next is a node)
+#while loop to itr.next
+#if statment with break
+#count = 0    count +++=
+
+
+
+
+
+	
+
+
+
+
+
+	
+
+	    
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
 	
     
 
