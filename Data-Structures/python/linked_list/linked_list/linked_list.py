@@ -93,14 +93,21 @@ class LinkedList:
 			newArr.append(itr.data)
 			itr = itr.next
 
-		newArr.reverse()
-		return(newArr[k])
+		if newArr == [] or k > len(newArr):
+			return('k number out of the range ')
+
+		else:
+
+		    newArr.reverse()
+		    return(newArr[k])
+		
 
 
     
     
 if __name__ == '__main__':
 	ll = LinkedList()
+	ll.kthFromEnd(100)
 	ll.insert(1)
 	ll.insert(2)
 	ll.insert(3)

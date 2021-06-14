@@ -36,6 +36,7 @@ def test_includes():
 
 def test_kthFromEnd():
     ll = LinkedList()
+    ll.kthFromEnd(0) == 'k number out of the range '
     ll.insert(1)
     ll.insert(2)
     ll.insert(3)
@@ -45,6 +46,7 @@ def test_kthFromEnd():
     ll.insert(2)                       #'3->2->7->1->2->5->None'
     assert ll.kthFromEnd(0) == 5
     assert ll.kthFromEnd(1) == 2
+    assert ll.kthFromEnd(100) == 'k number out of the range '
 
 
 

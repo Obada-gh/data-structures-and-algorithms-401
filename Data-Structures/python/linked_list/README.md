@@ -11,9 +11,10 @@ A linked list is a sequence of data elements, which are connected together via l
 -  Can properly return a collection of all the values that exist in the linked list
 
 ## whiteBoard process:
-![append](./append.png)
+<!-- ![append](./append.png)
 ![before](./after.png)
-![after](./before.png)
+![after](./before.png) -->
+![after](./ll-kth-from-end.png)
    
 ### code link:
  [linked list](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/Data-Structures/python/linked_list/linked_list/linked_list.py)
