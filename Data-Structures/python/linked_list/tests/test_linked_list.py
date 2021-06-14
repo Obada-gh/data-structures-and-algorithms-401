@@ -21,8 +21,7 @@ def test_toString():
     ll.insertAfter(1,2)
     ll.append(5)
     ll.insertBefore(1,7)
-
-    assert ll.toString() == '3->2->7->1->2->5->None'
+    assert ll.__str__() == '3->2->7->1->2->5->None'
 
 
 
@@ -32,6 +31,22 @@ def test_includes():
     ll.insert(2)
     assert ll.includes(7) == True
     assert ll.includes(47) == False
+
+
+
+def test_kthFromEnd():
+    ll = LinkedList()
+    ll.kthFromEnd(0) == 'k number out of the range '
+    ll.insert(1)
+    ll.insert(2)
+    ll.insert(3)
+    ll.insertAfter(1,2)
+    ll.append(5)
+    ll.insertBefore(1,7)
+    ll.insert(2)                       #'3->2->7->1->2->5->None'
+    assert ll.kthFromEnd(0) == 5
+    assert ll.kthFromEnd(1) == 2
+    assert ll.kthFromEnd(100) == 'k number out of the range '
 
 
 
