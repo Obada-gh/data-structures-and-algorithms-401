@@ -13,21 +13,25 @@ def test_instantiate():
 
 
 def test_toString():
+    
     ll = LinkedList()
     ll.insert(1)
     ll.insert(2)
     ll.insert(3)
+    ll.insertAfter(1,2)
+    ll.append(5)
+    ll.insertBefore(1,7)
 
-    assert ll.toString() == '3->2->1->'
+    assert ll.toString() == '3->2->7->1->2->5->None'
 
 
 
-def test_include():
+def test_includes():
     ll = LinkedList()
     ll.insert(7)
     ll.insert(2)
-    assert ll.include(7) == True
-    assert ll.include(47) == False
+    assert ll.includes(7) == True
+    assert ll.includes(47) == False
 
 
 
