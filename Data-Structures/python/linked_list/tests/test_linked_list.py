@@ -22,12 +22,12 @@ def test_toString():
 
 
 
-def test_include():
+def test_includes():
     ll = LinkedList()
     ll.insert(7)
     ll.insert(2)
-    assert ll.include(7) == True
-    assert ll.include(47) == False
+    assert ll.includes(7) == True
+    assert ll.includes(47) == False
 
 
 
