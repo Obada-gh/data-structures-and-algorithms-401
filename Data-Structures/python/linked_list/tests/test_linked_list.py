@@ -13,12 +13,16 @@ def test_instantiate():
 
 
 def test_toString():
+    
     ll = LinkedList()
     ll.insert(1)
     ll.insert(2)
     ll.insert(3)
+    ll.insertAfter(1,2)
+    ll.append(5)
+    ll.insertBefore(1,7)
 
-    assert ll.toString() == '3->2->1->'
+    assert ll.toString() == '3->2->7->1->2->5->None'
 
 
 
