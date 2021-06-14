@@ -22,8 +22,5 @@ Inserting an element at the beginning of a linked list is particularly nice and 
 
 Hopefully, we can start to see what kind of space time complexity this type of inserting will leave us with: a linear O(n). If we had a linked list of 100 nodes, that might not actually take that long. Even a 1000 might be pretty fast. But imagine if we wanted to add an element to the end of a linked list with a billion items! This insert algorithm would take as much time as the number of elements in our list, which, depending on our list, could be a very bad day for us.
 
-## API
-Define a method called insert which takes any value as an argument and adds a new node with that value to the head of the list with an O(1) Time performance.
-Define a method called includes which takes any value as an argument and returns a boolean result depending on whether that value exists as a Node’s value somewhere within the list.
-Define a method called toString  which takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
-"{ a } -> { b } -> { c } ->"
+## code link:
+ [linked list](./linked_list)
