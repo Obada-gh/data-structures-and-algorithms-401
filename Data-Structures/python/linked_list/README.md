@@ -10,6 +10,13 @@ A linked list is a sequence of data elements, which are connected together via l
 -  Will return false when searching for a value in the linked list that does not exist
 -  Can properly return a collection of all the values that exist in the linked list
 
+## whiteBoard process:
+![append](./append.png)
+![before](./append.png)
+![after](./append.png)
+   
+
+
 ## Approach & Efficiency
 Inserting an element at the beginning of a linked list is particularly nice and efficient because it takes the same amount of time, no matter how long our list is, which is to say it has a space time complexity that is constant, or O(1).
 
