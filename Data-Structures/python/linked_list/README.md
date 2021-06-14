@@ -12,8 +12,8 @@ A linked list is a sequence of data elements, which are connected together via l
 
 ## whiteBoard process:
 ![append](./append.png)
-![before](./append.png)
-![after](./append.png)
+![before](./after.png)
+![after](./before.png)
    
 ### code link:
  [linked list](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/Data-Structures/python/linked_list/linked_list/linked_list.py)
