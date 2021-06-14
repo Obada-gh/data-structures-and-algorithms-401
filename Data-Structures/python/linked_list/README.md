@@ -15,12 +15,12 @@ A linked list is a sequence of data elements, which are connected together via l
 ![before](./append.png)
 ![after](./append.png)
    
-
+### code link:
+ [linked list](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/Data-Structures/python/linked_list/linked_list/linked_list.py)
 
 ## Approach & Efficiency
 Inserting an element at the beginning of a linked list is particularly nice and efficient because it takes the same amount of time, no matter how long our list is, which is to say it has a space time complexity that is constant, or O(1).
 
 Hopefully, we can start to see what kind of space time complexity this type of inserting will leave us with: a linear O(n). If we had a linked list of 100 nodes, that might not actually take that long. Even a 1000 might be pretty fast. But imagine if we wanted to add an element to the end of a linked list with a billion items! This insert algorithm would take as much time as the number of elements in our list, which, depending on our list, could be a very bad day for us.
 
-## code link:
- [linked list](./linked_list)
+
