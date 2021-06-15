@@ -1,7 +1,7 @@
 class Node:
 	def __init__(self,data=None,next=None):  #have two class mempers
 		self.data = data
-		self.next = next
+		self.next = next         
 
 class LinkedList:
 	
@@ -11,7 +11,7 @@ class LinkedList:
 
 	def insert(self,data):
 		node = Node(data,self.head)
-		self.head = node
+		self.head = node                          (data,None)
 
 	def __str__(self):
 		if self.head is None:
@@ -49,10 +49,10 @@ class LinkedList:
             self.head = Node(value, None)
             return
 
-         itr = self.head
+         itr = self.head   
 
          while itr.next:
-            itr = itr.next
+            itr = itr.next     
 
          itr.next = Node(value, None)
 
@@ -88,7 +88,7 @@ class LinkedList:
 
 	def kthFromEnd(self,k):
 		newArr=[]
-		itr = self.head
+		itr = self.head        (data,next)
 		while itr:
 			newArr.append(itr.data)
 			itr = itr.next
