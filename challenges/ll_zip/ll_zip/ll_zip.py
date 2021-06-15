@@ -125,36 +125,6 @@ if __name__ == '__main__':
 
 
 
-	# def insert_val(self,data):
-	# 	if self.head == None:
-	# 		node = Node(5,self.head)
-	# 	else:
-	# 	    for i in data:
-	# 		    self.append(i)
-	# 		#node.next.push to arr
-	# 		#while.next
-	# 		#arrayshift
-	# 		#3
-
-
-	# def length(self):
-	# 	itr = self.head
-	# 	count=1
-		
-
-	# 	while itr.next:
-			
-	# 		itr = itr.next
-	# 		count+=1
-
-	# 	return count
-
-	
-#itr.next is node (next is a node)
-#while loop to itr.next
-#if statment with break
-#count = 0    count +++=
-
 
 
 
