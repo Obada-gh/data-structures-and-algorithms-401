@@ -12,6 +12,7 @@ A linked list is a sequence of data elements, which are connected together via l
 -  try to zip two linked list
 
 ## whiteBoard process:
+![ll-zip](./ll-zip.png)
 
    
 ### code link:
