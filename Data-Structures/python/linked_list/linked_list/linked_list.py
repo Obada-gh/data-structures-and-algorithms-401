@@ -11,7 +11,7 @@ class LinkedList:
 
 	def insert(self,data):
 		node = Node(data,self.head)
-		self.head = node                          (data,None)
+		self.head = node                          
 
 	def __str__(self):
 		if self.head is None:
@@ -25,6 +25,8 @@ class LinkedList:
 		while itr:
 			llstr += str(itr.data) + '->'
 			itr = itr.next
+
+		print(llstr + f"{itr}") 
 		return(llstr + f"{itr}") 
 
 	
@@ -88,7 +90,7 @@ class LinkedList:
 
 	def kthFromEnd(self,k):
 		newArr=[]
-		itr = self.head        (data,next)
+		itr = self.head        
 		while itr:
 			newArr.append(itr.data)
 			itr = itr.next
