@@ -4,14 +4,18 @@ class Node:
 		self.next = next         
 
 class LinkedList:
+    
 	
 	
 	def __init__(self):
 		self.head = None
+    
+    
+
 
 	def insert(self,data):
 		node = Node(data,self.head)
-		self.head = node                          (data,None)
+		self.head = node                          
 
 	def __str__(self):
 		if self.head is None:
@@ -25,6 +29,7 @@ class LinkedList:
 		while itr:
 			llstr += str(itr.data) + '->'
 			itr = itr.next
+		print(llstr + f"{itr}") 
 		return(llstr + f"{itr}") 
 
 	
@@ -88,7 +93,7 @@ class LinkedList:
 
 	def kthFromEnd(self,k):
 		newArr=[]
-		itr = self.head        (data,next)
+		itr = self.head        
 		while itr:
 			newArr.append(itr.data)
 			itr = itr.next
@@ -100,23 +105,96 @@ class LinkedList:
 
 		    newArr.reverse()
 		    return(newArr[k])
+
+	
+	def insertValus(self,arr):
+
+		for i in arr:
+			self.append(i)
+
+
+	def insertValus(self,arr):
+
+		for i in arr:
+			self.append(i)
+
+ 
+
+def zipLists(arg1,arg2):
+  ll1=arg1.replace('None', '')
+  ll2=arg2.replace('None', '')
+
+  print(ll1+ll2)
+  ll3=ll1.split('->')
+  ll4=ll2.split('->')
+
+  llall=[]
+
+  if len(ll3) < len(ll4) :
+	      for i in range(len(ll3)):
+		      llall+=ll3[i]+ll4[i]
+	      llall+=ll4[len(ll3):len(ll4)-1]
+	   
+		
+    
+  if len(ll4) < len(ll3) :
+	
+	      for i in range(len(ll4)):
+		      llall+=ll3[i]+ll4[i]
+	      llall+=ll3[len(ll4):len(ll3)-1]
+
+   
+  ll5=LinkedList()
+  llfinal=ll5.insertValus(llall)
+            
+
+
+  
+
+  print(llfinal)
+ 
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
 		
 
 
     
     
 if __name__ == '__main__':
-	ll = LinkedList()
-	ll.kthFromEnd(100)
-	ll.insert(1)
-	ll.insert(2)
-	ll.insert(3)
-	ll.insertAfter(1,2)
-	ll.append(5)
-	ll.insertBefore(1,7)
-	ll.__str__()
-	ll.kthFromEnd(0)
-	ll.kthFromEnd(2)
+	ll1 = LinkedList()
+	ll2 = LinkedList()
+	
+
+	ll1.insertValus([1,2,3])
+	ll2.insertValus([4,5,6,8])
+
+	arg1=ll1.__str__()
+	arg2=ll2.__str__()
+
+	zipLists(arg1,arg2)
+	    
+		
+
+
+	
+	
+	# ll.kthFromEnd(0)
+	# ll.kthFromEnd(2)
+	
+
 
 
 
