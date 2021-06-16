@@ -16,7 +16,7 @@ A linked list is a sequence of data elements, which are connected together via l
 
    
 ### code link:
- [linked list](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/Data-Structures/python/linked_list/linked_list/linked_list.py)
+ [linked list](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/ll_zip/ll_zip/ll_zip.py)
 
 ## Approach & Efficiency
 Inserting an element at the beginning of a linked list is particularly nice and efficient because it takes the same amount of time, no matter how long our list is, which is to say it has a space time complexity that is constant, or O(1).
