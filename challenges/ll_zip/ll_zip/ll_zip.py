@@ -124,13 +124,13 @@ def zipLists(arg1,arg2):
   ll1=arg1.replace('None', '')
   ll2=arg2.replace('None', '')
 
-  print(ll1+ll2)
+  
   ll3=ll1.split('->')
   ll4=ll2.split('->')
 
   llall=[]
 
-  if len(ll3) < len(ll4) :
+  if len(ll3) <= len(ll4) :
 	      for i in range(len(ll3)):
 		      llall+=ll3[i]+ll4[i]
 	      llall+=ll4[len(ll3):len(ll4)-1]
@@ -143,15 +143,16 @@ def zipLists(arg1,arg2):
 		      llall+=ll3[i]+ll4[i]
 	      llall+=ll3[len(ll4):len(ll3)-1]
 
-   
-  ll5=LinkedList()
-  llfinal=ll5.insertValus(llall)
+  return(llall)
+  
+  
+  
             
 
 
   
 
-  print(llfinal)
+
  
 
 
@@ -176,15 +177,19 @@ def zipLists(arg1,arg2):
 if __name__ == '__main__':
 	ll1 = LinkedList()
 	ll2 = LinkedList()
+	ll3 = LinkedList()
 	
 
 	ll1.insertValus([1,2,3])
 	ll2.insertValus([4,5,6,8])
-
 	arg1=ll1.__str__()
 	arg2=ll2.__str__()
 
-	zipLists(arg1,arg2)
+	ll3.insertValus(zipLists(arg1,arg2))
+	arg3=ll3.__str__()
+
+	
+	
 	    
 		
 
