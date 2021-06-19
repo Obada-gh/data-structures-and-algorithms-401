@@ -11,5 +11,6 @@ concepts | link
  array-shift |[array-binary-search](https://obada-gh.github.io/data-structures-and-algorithms-401/array-binary-search/)
  linked_list |[linked_list](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/linked_list/)
  ll_zip |[ll_zip](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/ll_zip/)
+ stacks_and_queues |[stacks_and_queues](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/stacks_and_queues/)
 
 
