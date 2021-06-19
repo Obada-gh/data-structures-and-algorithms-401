@@ -33,7 +33,7 @@ Queues provide services in computer science, transport, and operations research 
 
 
 ### code link:
- [stacks_and_queues](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/Data-Structures/python/stacks_and_queues/stacks_and_queues/stacks_and_queues.py)
+[stacks_and_queues](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/Data-Structures/python/stacks_and_queues/stacks_and_queues/stacks_and_queues.py)
 
 ## Approach & Efficiency
 Push O(1)
