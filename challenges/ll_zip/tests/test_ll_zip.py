@@ -59,16 +59,15 @@ def test_mergedLinkedLists():
 
     ll1 = LinkedList()
     ll2 = LinkedList()
-    ll3 = LinkedList()
-	
 
-    ll1.insertValus([1,2,3])
-    ll2.insertValus([4,5,6,8])
-    arg1=ll1.__str__()
-    arg2=ll2.__str__()
+    ll1.append(1)
+    ll1.append(2)
+    ll1.append(3)
+    ll1.append(4)
 
-    ll3.insertValus(zipLists(arg1,arg2))
-    arg3=ll3.__str__()
+    ll2.append(1)
+    ll2.append(2)
+    ll2.append(3)
+    ll2.append(4)
 
-    assert arg3 == '1->4->2->5->3->6->8->None'
-
+    assert zipLists(ll1,ll2) == '1->1->2->2->3->3->4->4->None'
