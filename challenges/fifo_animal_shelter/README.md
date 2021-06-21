@@ -7,6 +7,9 @@ dequeue(pref): returns either a dog or a cat. If pref is not "dog" or "cat" then
 ## Whiteboard Process
 ![fifo-animal-shelter](./fifo-animal-shelter.png)
 
+## Code link:
+[fifo_animal_shelter](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/fifo_animal_shelter/fifo_animal_shelter/fifo_animal_shelter.py)
+
 ## Approach & Efficiency
 
 Enqueue O(1) When you add an item to a queue, you use the enqueue action. This is done with an O(1) operation in time because it does not matter how many other items live in the queue (n); it takes the same amount of time to perform the operation.
