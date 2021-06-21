@@ -34,7 +34,7 @@ Peek O(1) When conducting a peek, you will only be inspecting the front Node of 
 
 Typically, you want to check isEmpty before conducting a peek. This will ensure that an exception is not raised. Alternately, you can wrap the call in a try/catch block.
 
-## Solution
+## Solution:
 ```
 class Node:
     def __init__(self,value=None,next=None):
