@@ -13,5 +13,6 @@ concepts | link
  ll_zip |[ll_zip](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/ll_zip/)
  stacks_and_queues |[stacks_and_queues](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/stacks_and_queues/)
  queue_with_stacks |[queue_with_stacks](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/queue_with_stacks/)
+ fifo_animal_shelter |[fifo_animal_shelter](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/fifo_animal_shelter/)
 
 
