@@ -16,4 +16,5 @@ concepts | link
  fifo_animal_shelter |[fifo_animal_shelter](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/fifo_animal_shelter/)
  multi_bracket_validation |[multi_bracket_validation](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/multi_bracket_validation/)
  trees |[trees](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/trees/)
+ tree-max |[tree-max](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/trees/)
 

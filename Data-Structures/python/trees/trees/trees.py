@@ -7,7 +7,7 @@
 # # remember the child is root for the element below.
 
 class Binary_Tree:
-    def __init__(self,value):
+    def __init__(self,value=None):
         self.value = value
         self.left = None
         self.right = None
@@ -78,6 +78,10 @@ class Binary_Tree:
                 return self.right.contains(value)
             else:
                 return False
+
+    def tree_max(self):
+        return max(self.pre_order())
+
         
 
 def build_tree(elements):
@@ -88,14 +92,18 @@ def build_tree(elements):
 
     return root 
 
+
+    
+
 if __name__ == '__main__':
     nums = [17,4,1,20,9,23,18,34,18,4]
     nums_tree = build_tree(nums)
-    print(nums_tree.in_order())
+    
     print(nums_tree.contains(4))
     print(nums_tree.contains(5))
-    print(nums_tree.post_order())
-    print(nums_tree.pre_order())
+    
+    
+    print(nums_tree.tree_max())
             
 
 

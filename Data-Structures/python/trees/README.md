@@ -24,6 +24,133 @@ Contains
 Argument: value
 Returns: boolean indicating whether or not the value is in the tree at least once.
 
+## Whiteboard Process:
+![tree-max](./tree-max.png)
+
+
+
+## Solution:
+
+```
+
+# # in order traversal : your root in the middle you visit the left tree then right tree
+# [7,12,14,15,20,23,27,88]
+# # pre order traversal: your root first then left tree then right tree
+# [15,12,7,14,27,20,23,88]
+# # post order traversal: your root at the end then left tree then right tree 
+# [7,14,12,23,20,88,27,15]
+# # remember the child is root for the element below.
+
+class Binary_Tree:
+    def __init__(self,value=None):
+        self.value = value
+        self.left = None
+        self.right = None
+
+    def add(self,value):
+        if value == self.value:
+            return
+        if value < self.value:
+            if self.left:
+                self.left.add(value)
+            else:
+                self.left = Binary_Tree(value)
+        
+        if value > self.value:
+            if self.right:
+                self.right.add(value)
+            else:
+                self.right = Binary_Tree(value)
+    
+    def in_order(self):
+        elements = []
+        if self.left:
+            elements += self.left.in_order()
+        elements.append(self.value)
+
+        if self.right:
+            elements += self.right.in_order()
+        
+        return elements
+
+    def pre_order(self):
+        elements = [self.value]
+
+        if self.left:
+  
+            elements += self.left.pre_order()
+       
+
+        if self.right:
+
+            elements += self.right.pre_order()
+        
+        return elements
+
+    def post_order(self):
+        elements = []
+        if self.left:
+            elements += self.left.post_order()
+        
+
+        if self.right:
+            elements += self.right.post_order()
+        
+        elements.append(self.value)
+        
+        return elements
+
+    def contains(self,value):
+        if self.value == value:
+            return True
+        if value < self.value:
+            if self.left:
+                return self.left.contains(value)
+            else:
+                return False
+        if value > self.value:
+            if self.right:
+                return self.right.contains(value)
+            else:
+                return False
+
+    def tree_max(self):
+        return max(self.pre_order())
+
+        
+
+def build_tree(elements):
+    root = Binary_Tree(elements[0])
+
+    for i in range(1,len(elements)):
+        root.add(elements[i])
+
+    return root 
+
+
+
+
+    
+
+if __name__ == '__main__':
+    nums = [17,4,1,20,9,23,18,34,18,4]
+    nums_tree = build_tree(nums)
+    
+    print(nums_tree.contains(4))
+    print(nums_tree.contains(5))
+    
+    
+    print(nums_tree.tree_max())
+            
+
+```
+
+        
+
+
+
+
+
 ## Approach & Efficiency
 
 The Big O time complexity for inserting a new node is O(n). Searching for a specific node will also be O(n). Because of the lack of organizational structure in a Binary Tree, the worst case for most operations will involve traversing the entire tree. If we assume that a tree has n nodes, then in the worst case we will have to look at n items, hence the O(n) complexity.
@@ -60,3 +187,7 @@ Returns: array with pre order  the root for the tree
 ### post_order method:
 Arguments: nothing
 return : array with post order  the root for the tree
+
+### tree-max:
+Arguments: nothing
+return : the max value in tree
