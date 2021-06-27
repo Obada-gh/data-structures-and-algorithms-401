@@ -33,5 +33,27 @@ The Big O space complexity for a node insertion using breadth first insertion wi
 A “perfect” binary tree is one where every non-leaf node has exactly two children. The maximum width for a perfect binary tree, is 2^(h-1), where h is the height of the tree. Height can be calculated as log n, where n is the number of nodes.
 
 ## API
+I use this methods and functions:
 
-<!-- Description of each method publicly available in each of your trees -->
+## Add method:
+Arguments: value
+Return: nothing
+Adds a new node with that value in the correct location in the binary search tree.
+## Contains method:
+Argument: value
+Returns: boolean indicating whether or not the value is in the tree at least once.
+
+## build_tree function:
+Arguments: array
+return : root with builded tree.
+
+## in_order method:
+Arguments: nothing
+Return: array with in order the root for the tree
+## pre_order method:
+Argument: nothing
+Returns: array with pre order  the root for the tree
+
+## post_order method:
+Arguments: nothing
+return : array with post order  the root for the tree
