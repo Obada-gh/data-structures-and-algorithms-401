@@ -35,25 +35,25 @@ A “perfect” binary tree is one where every non-leaf node has exactly two chi
 ## API
 I use this methods and functions:
 
-## Add method:
+### Add method:
 Arguments: value
 Return: nothing
 Adds a new node with that value in the correct location in the binary search tree.
-## Contains method:
+### Contains method:
 Argument: value
 Returns: boolean indicating whether or not the value is in the tree at least once.
 
-## build_tree function:
+### build_tree function:
 Arguments: array
 return : root with builded tree.
 
-## in_order method:
+### in_order method:
 Arguments: nothing
 Return: array with in order the root for the tree
-## pre_order method:
+### pre_order method:
 Argument: nothing
 Returns: array with pre order  the root for the tree
 
-## post_order method:
+### post_order method:
 Arguments: nothing
 return : array with post order  the root for the tree
