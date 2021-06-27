@@ -12,18 +12,18 @@ class Binary_Tree:
         self.left = None
         self.right = None
 
-    def add_child(self,value):
+    def add(self,value):
         if value == self.value:
             return
         if value < self.value:
             if self.left:
-                self.left.add_child(value)
+                self.left.add(value)
             else:
                 self.left = Binary_Tree(value)
         
         if value > self.value:
             if self.right:
-                self.right.add_child(value)
+                self.right.add(value)
             else:
                 self.right = Binary_Tree(value)
     
@@ -39,12 +39,15 @@ class Binary_Tree:
         return elements
 
     def pre_order(self):
-        elements = []
+        elements = [self.value]
+
         if self.left:
+  
             elements += self.left.pre_order()
-        elements.append(self.value)
+       
 
         if self.right:
+
             elements += self.right.pre_order()
         
         return elements
@@ -53,10 +56,12 @@ class Binary_Tree:
         elements = []
         if self.left:
             elements += self.left.post_order()
-        elements.append(self.value)
+        
 
         if self.right:
             elements += self.right.post_order()
+        
+        elements.append(self.value)
         
         return elements
 
@@ -79,15 +84,17 @@ def build_tree(elements):
     root = Binary_Tree(elements[0])
 
     for i in range(1,len(elements)):
-        root.add_child(elements[i])
+        root.add(elements[i])
 
-    return root
+    return root 
 
 if __name__ == '__main__':
     nums = [17,4,1,20,9,23,18,34,18,4]
     nums_tree = build_tree(nums)
     print(nums_tree.in_order())
-    print(nums_tree.contains(5))
+    print(nums_tree.contains(4))
+    print(nums_tree.post_order())
+    print(nums_tree.pre_order())
             
 
 
