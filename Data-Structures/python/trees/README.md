@@ -25,7 +25,8 @@ Argument: value
 Returns: boolean indicating whether or not the value is in the tree at least once.
 
 ## Whiteboard Process:
-![tree-max](./tree-max.png)
+<!-- ![tree-max](./tree-max.png) -->
+![tree-breadth-first](./tree-breadth-first.png)
 
 
 
