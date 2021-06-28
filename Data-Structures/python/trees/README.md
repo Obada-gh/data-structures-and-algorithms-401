@@ -115,7 +115,20 @@ class Binary_Tree:
                 return False
 
     def tree_max(self):
+        if self.pre_order()==None:
+            return 'empty tree'
         return max(self.pre_order())
+
+    def tree_max(self):
+        if self.pre_order()==None:
+            return 'empty tree'
+        else:
+            arr = self.pre_order()
+            max = 0
+            for i in arr:
+                if i > max:
+                    max = i
+        return  max
 
         
 
@@ -128,19 +141,25 @@ def build_tree(elements):
     return root 
 
 
-
-
     
 
 if __name__ == '__main__':
+    
     nums = [17,4,1,20,9,23,18,34,18,4]
     nums_tree = build_tree(nums)
     
     print(nums_tree.contains(4))
     print(nums_tree.contains(5))
-    
+    print(nums_tree.tree_max())   
     
     print(nums_tree.tree_max())
+            
+
+
+
+        
+
+
             
 
 ```
