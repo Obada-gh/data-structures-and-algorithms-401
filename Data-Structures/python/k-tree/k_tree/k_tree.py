@@ -1,6 +1,7 @@
+newArr = []
 class Ktree:
-    def __init__(self,data):
-        self.data = data
+    def __init__(self,value):
+        self.value = value
         self.children = []
         self.parent = None
 
@@ -21,13 +22,25 @@ class Ktree:
 
 
     def print_tree(self):
+        spaces = ' ' * self.get_level() * 10
+        prefix = spaces + '|___' if self.parent else ''
         
         
-        print(self.data)
+        print(prefix+str(self.value))
         if self.children:
             for child in self.children:
                 child.print_tree()
 
+    def takeValues(self):
+        
+        
+        
+        newArr.append(self.value)
+        if self.children:
+            for child in self.children:
+                child.takeValues()
+        
+        
 
 def build_product_tree():
     root = Ktree(1)
@@ -45,6 +58,10 @@ def build_product_tree():
     tv = Ktree(10)
     tv.add_child(Ktree(11))
     tv.add_child(Ktree(12))
+    tv.add_child(Ktree(13))
+    tv.add_child(Ktree(14))
+    tv.add_child(Ktree(15))
+    
 
     root.add_child(laptop)
     root.add_child(cellphone)
@@ -54,24 +71,27 @@ def build_product_tree():
     return root
 
     
+def build_new_tree(arr):
+    root = Ktree(arr[0])
+
+    laptop = Ktree(arr[1])
+    laptop.add_child(Ktree(arr[2]))
+    laptop.add_child(Ktree(arr[3]))
+    laptop.add_child(Ktree(arr[4]))
+
+    cellphone = Ktree(arr[5])
+    cellphone.add_child(Ktree(arr[6]))
+    cellphone.add_child(Ktree(arr[7]))
+    cellphone.add_child(Ktree(arr[8]))
+
+    tv = Ktree(arr[9])
+    tv.add_child(Ktree(arr[10]))
+    tv.add_child(Ktree(arr[11]))
+    tv.add_child(Ktree(arr[11]))
+    tv.add_child(Ktree(arr[12]))
+    tv.add_child(Ktree(arr[13]))
+    tv.add_child(Ktree(arr[14]))
     
-def new_k_tree(arr):
-    root = Ktree(arr[0].data)
-
-    laptop = Ktree(arr[1].data)
-    laptop.add_child(arr[2].data)
-    laptop.add_child(Ktree(arr[3].data))
-    laptop.add_child(Ktree(arr[4].data))
-
-    cellphone = Ktree(arr[5].data)
-    cellphone.add_child(arr[6].data)
-    cellphone.add_child(Ktree(arr[7].data))
-    cellphone.add_child(Ktree(arr[8].data))
-
-    tv = Ktree(arr[9].data)
-    tv.add_child(arr[10].data)
-    tv.add_child(Ktree(arr[11].data))
-    tv.add_child(Ktree(arr[12].data))
 
     root.add_child(laptop)
     root.add_child(cellphone)
@@ -81,26 +101,35 @@ def new_k_tree(arr):
     return root
 
 
-
-def fizz_buzz_tree(k_tree):
+def fizz_buzz(x):
+    newChange=[]
+    for i in x:
+        if i % 3 == 0 and i % 5 == 0:
+            newChange.append('FizzBuzz') 
+        elif i % 3 == 0:
+            newChange.append('Fizz') 
     
-    arr=k_tree.children
-    for i in arr:
-        if i.data % 3 == 0:
-            i.data = 'Fizz'
-        elif i.data % 5 ==0:
-            i.data = 'Buzz'
-        elif i.data % 3 == 0 and i.data % 5 == 0:
-            i.data = 'FizzBuzz'
+        elif i % 5 == 0:
+            newChange.append('Buzz') 
+
         else:
-            i.data = 'obada'
-    return new_k_tree(arr)
-
-
-
+            newChange.append(f'حلهاobada={i}') 
     
+    return newChange
+
+def tree_fizz_buzz(k_tree):
+    k_tree.takeValues()
+    changer=fizz_buzz(newArr)
+    return build_new_tree(changer)
+
+
 
 if __name__ == '__main__':
-    oldtree=build_product_tree()
-    fizz_buzz_tree(oldtree)
+    old_tree=build_product_tree()  
+    print('The new tree:')
+    print(tree_fizz_buzz(old_tree))
+
+
+
+
 
