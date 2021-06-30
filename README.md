@@ -18,5 +18,5 @@ concepts | link
  trees |[trees](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/trees/)
  tree-max |[tree-max](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/trees/)
  tree-breadth-first |[tree-breadth-first](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/trees/)
- tree-breadth-first |[tree-breadth-first](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/k-tree/)
+ k-tree-fizz-bizz |[k-tree-fizz-bizz](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/k-tree/)
 
