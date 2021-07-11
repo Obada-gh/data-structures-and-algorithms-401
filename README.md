@@ -19,5 +19,5 @@ concepts | link
  tree-max |[tree-max](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/trees/)
  tree-breadth-first |[tree-breadth-first](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/trees/)
  k-tree-fizz-bizz |[k-tree-fizz-bizz](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/k-tree/)
- insertion_sort |[insertion_sort](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/insertion_sort/)
+ insertion_sort |[insertion_sort](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/Insertion-Sort/)
 
