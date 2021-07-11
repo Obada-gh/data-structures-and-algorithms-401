@@ -28,8 +28,8 @@ Pseudocode
 
 ## Code_link and Blog_link:
 
-[code](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/Insertion-Sort/insertion_sort/insertion_sort.py)
-[Blog](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/Insertion-Sort/BLOG.md)
+1- [code](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/Insertion-Sort/insertion_sort/insertion_sort.py)
+2- [Blog](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/Insertion-Sort/BLOG.md)
 
 
 ## Approach & Efficiency
