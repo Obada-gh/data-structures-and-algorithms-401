@@ -49,8 +49,8 @@ ALGORITHM Merge(left, right, arr)
 
 ## Code_link and Blog_link:
 
-1- [code](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/merge-sort/merge_sort/merge_sort.py)
-2- [Blog](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/merge-sort/BLOG.md)
+1- [code](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/merge-sort/merge-sort/merge_sort/merge_sort.py)
+2- [Blog](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/challenges/merge-sort/merge-sort/BLOG.md)
 
 
 ## Approach & Efficiency
