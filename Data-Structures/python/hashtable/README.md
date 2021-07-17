@@ -57,6 +57,8 @@ Basically, the hash function takes a key and returns an integer. We use the inte
 
 The hash code is used again to read something from the hash map. Take the key, run it through the hash code to get a number, use that number to index the array. Calculating the hash code and reading an array at that index is all constant time to the hash map has O(1) read access!
 
+## Code Link:
+[hashTable](https://github.com/Obada-gh/data-structures-and-algorithms-401/blob/main/Data-Structures/python/hashtable/hashtable/hashtable.py)
 ## API
 
 1. hash:
