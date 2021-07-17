@@ -74,3 +74,6 @@ Returns: Boolean, indicating if the key exists in the table already.
 4. add:
 Arguments: key
 Returns: Index in the collection for that key
+
+### Thanks for :
+[codebasics](https://www.youtube.com/watch?v=54iv1si4YCM)
