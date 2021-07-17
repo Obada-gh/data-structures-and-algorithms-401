@@ -22,4 +22,5 @@ concepts | link
  insertion_sort |[insertion_sort](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/Insertion-Sort/)
  merge-sort |[merge-sort](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/merge-sort/merge-sort/)
  quick-sort |[quick-sort](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/quick-sort/)
+ hashtable |[hashtable](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/hashtable/)
 
