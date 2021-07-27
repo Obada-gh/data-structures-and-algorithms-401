@@ -24,4 +24,5 @@ concepts | link
  quick-sort |[quick-sort](https://obada-gh.github.io/data-structures-and-algorithms-401/challenges/quick-sort/)
  hashtable |[hashtable](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/hashtable/)
  hashmap-repeated-word |[hashmap-repeated-word](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/hashmap-repeated-word/)
+ hashmap-tree-intersection |[hashmap-tree-intersection](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/hashmap-tree-intersection/)
 
