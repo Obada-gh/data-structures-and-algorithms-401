@@ -15,18 +15,75 @@ class Graph:
         v = Node(val)
         self.adjacencyList[v] = []
         return v
-    def add_edge(self,ver1,ver2,w):
+    def add_edge(self,start,end,w=0):
         # check if both in graph
-        edge = Edge(ver2,w)
-        self.adjacencyList[ver1].append(edge)
+        edge = Edge(end,w)
+        self.adjacencyList[start].append(edge)
 
         
     def get_nodes(self):
-        pass
-    def get_neighbors(self):
-        pass    
+        allNodes = []
+
+        for node in self.adjacencyList.keys():
+            allNodes.append(node)
+
+        return allNodes
+
+
+    def get_neighbors(self,node):
+        neighbors = []
+        if node in self.adjacencyList:
+        
+            for neighbor in self.adjacencyList[node]:
+                neighbors.append((neighbor.node,neighbor.w))  
+        
+        return neighbors
     def size(self):
-        pass
+
+        return len(self.adjacencyList.keys())
+
+    def __str__(self):
+        output = ''
+        for node in self.adjacencyList.keys():
+            # Concatenate the value of node
+            output += node.val
+            # Iterate over all edges of this node
+            for edge in self.adjacencyList[node]:
+                output += ' -> ' + edge.node.val 
+            # Add a new line
+            output += '\n'
+        return output
+
+
+
+if __name__ == '__main__':
+    graph = Graph()
+    a = graph.add_node('a')
+    b = graph.add_node('b')
+    c = graph.add_node('c')
+    d = graph.add_node('d')
+    e = graph.add_node('e')
+    f = graph.add_node('f')
+    graph.add_edge(a, c)
+    graph.add_edge(a, d)
+    graph.add_edge(b, c)
+    graph.add_edge(b, f)
+    graph.add_edge(c, a)
+    graph.add_edge(c, b)
+    graph.add_edge(c, e)
+    graph.add_edge(d, a)
+    graph.add_edge(d, e)
+    graph.add_edge(e, c)
+    graph.add_edge(e, d)
+    graph.add_edge(e, f)
+    graph.add_edge(f, b)
+    graph.add_edge(f, e)
+
+    # print(graph)
+    # print(graph.get_nodes())
+    print(graph.get_neighbors(a))
+    print(graph.size())
+
 
 
 
