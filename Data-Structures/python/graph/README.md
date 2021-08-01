@@ -67,4 +67,4 @@ size
 Arguments: none
 Returns the total number of nodes in the graph
 
-## thx for Ahmad Zater he help me with tests.
+thx for Ahmad Zater he help me with tests.
