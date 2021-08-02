@@ -1,3 +1,4 @@
+
 class Node:
     def __init__(self,val):
         self.val=val
@@ -53,10 +54,44 @@ class Graph:
             # Add a new line
             output += '\n'
         return output
+    
+    def breadthFirst(self,node):
+        nodes = []
+        breadth= Queue()
+        visited = set()
+
+        breadth.enqueue(node)
+        visited.add(node)
+
+        while breadth:
+            front = breadth.dequeue()
+            nodes.append(front)
+
+            for child in self.adjacencyList[front]:
+                if child[0] not in visited:
+                    child = child[0]
+                    visited.add(child)
+                    breadth.enqueue(child)
+        
+        return nodes
+
+#------------------------queue for breadthFirst method
+
+from collections import deque
+
+class Queue():
+    def __init__(self):
+        self.deque = deque()
+
+    def enqueue(self, val):
+        self.deque.appendleft(val)
+    
+    def dequeue(self):
+        return self.deque.pop()
 
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     graph = Graph()
     a = graph.add_node('a')
     b = graph.add_node('b')
@@ -64,25 +99,14 @@ if __name__ == '__main__':
     d = graph.add_node('d')
     e = graph.add_node('e')
     f = graph.add_node('f')
+    graph.add_edge(a, b)
     graph.add_edge(a, c)
-    graph.add_edge(a, d)
-    graph.add_edge(b, c)
-    graph.add_edge(b, f)
-    graph.add_edge(c, a)
-    graph.add_edge(c, b)
+    graph.add_edge(b, d)
+    graph.add_edge(c, d)
     graph.add_edge(c, e)
-    graph.add_edge(d, a)
-    graph.add_edge(d, e)
-    graph.add_edge(e, c)
-    graph.add_edge(e, d)
-    graph.add_edge(e, f)
-    graph.add_edge(f, b)
-    graph.add_edge(f, e)
+    graph.add_edge(d, f)
 
-    # print(graph)
-    # print(graph.get_nodes())
-    print(graph.get_neighbors(a))
-    print(graph.size())
+    print(graph.breadthFirst(a))
 
 
 

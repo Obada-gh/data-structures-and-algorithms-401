@@ -38,8 +38,17 @@ size
 Arguments: none
 Returns the total number of nodes in the graph
 
+breadth first
+Arguments: Node
+Return: A collection of nodes in the order they were visited.
+Display the collection
+
+## white board:
+![graph-breadth-first](./graph-breadth-first.png)
+
 ## Code link:
 [graph](https://github.com/Obada-gh/data-structures-and-algorithms-401/tree/main/Data-Structures/python/graph/graph/graph.py)
+
 
 ## Approach & Efficiency
 all O(n) only add node and the size O(1)
@@ -67,4 +76,7 @@ size
 Arguments: none
 Returns the total number of nodes in the graph
 
-thx for Ahmad Zater he help me with tests.
+breadth first
+Arguments: Node
+Return: A collection of nodes in the order they were visited.
+Display the collection
