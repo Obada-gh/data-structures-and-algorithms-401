@@ -94,4 +94,28 @@ def test_breadthFirst():
     graph.add_edge(c, e)
     graph.add_edge(d, f)
 
-    assert graph.breadthFirst(a) == ['a','b','c','d','e','f']
+    assert graph.breadthFirst(a) == [a,b,c,d,e,f]
+
+
+def test_graph_business_trip():
+    graph = Graph()
+    a = graph.add_node('a')
+    b = graph.add_node('b')
+    c = graph.add_node('c')
+    d = graph.add_node('d')
+    e = graph.add_node('e')
+    f = graph.add_node('f')
+    graph.add_edge(a, b,150)
+    graph.add_edge(b, a,150)
+    graph.add_edge(a, c,82)
+    graph.add_edge(c, a,82)
+    graph.add_edge(b, d,99)
+    graph.add_edge(d, b,99)
+    graph.add_edge(c, d,42)
+    graph.add_edge(d, c,42)
+    graph.add_edge(c, e,105)
+    graph.add_edge(e, c,105)
+    graph.add_edge(d, f,26)
+    graph.add_edge(f, d,26)
+     
+    assert business_trip(graph,[a,b,d]) == 'True 249$'

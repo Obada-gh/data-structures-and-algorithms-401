@@ -28,4 +28,6 @@ hashmap-tree-intersection |[hashmap-tree-intersection](https://obada-gh.github.i
 hashmap-left-join |[hashmap-left-join](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/hashmap-left-join/)
 graph |[graph](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/graph/)
 graph-breadth-first |[graph-breadth-first](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/graph/)
+graph-business-trip |[graph-business-trip](https://obada-gh.github.io/data-structures-and-algorithms-401/Data-Structures/python/graph/)
+
 
