@@ -43,15 +43,26 @@ Arguments: Node
 Return: A collection of nodes in the order they were visited.
 Display the collection
 
-## white board:
-![graph-breadth-first](./graph-breadth-first.png)
+function called business trip
+Arguments: graph, array of city names
+Return: cost or null
+
+# white board:
+
+## breadth-first:
+
+![graph-breadth-first](./breadth-first.png)
+
+## graph-business-trip:
+
+![graph-breadth-first](./graph-business-trip.png)
 
 ## Code link:
 [graph](https://github.com/Obada-gh/data-structures-and-algorithms-401/tree/main/Data-Structures/python/graph/graph/graph.py)
 
 
 ## Approach & Efficiency
-all O(n) only add node and the size O(1)
+all O(n) only add node and the size O(1) also graph-business-trip is o(n^2)
 
 ## API
 
@@ -80,3 +91,8 @@ breadth first
 Arguments: Node
 Return: A collection of nodes in the order they were visited.
 Display the collection
+
+
+function called business trip
+Arguments: graph, array of city names
+Return: cost or null

@@ -113,7 +113,7 @@ def business_trip(graph,arr):
     if cost == 0 :
         exist = False
 
-    return f'{exist} {cost} $'                
+    return f'{exist} {cost}$'                
 
 
 
